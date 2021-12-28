@@ -34,7 +34,6 @@ public class Hooks {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.proxyEnabled = true;
         Configuration.pageLoadTimeout = 40000L;
-        //        Configuration.browserSize = DESKTOP_BROWSER_SIZE;
 
         SelenideLogger.addListener(
             "AllureSelenide",
@@ -43,16 +42,6 @@ public class Hooks {
                 .savePageSource(true)
         );
     }
-
-    //    @Before("@mobile")
-    //    public void beforeMobileScenario() {
-    //        if (SUPPORTED_DEVICE_PLATFORMS.contains(mobilePlatformToSet) && WebDriverRunner.isEdge()) {
-    //            final Platform platform = deserializerForPlatform.readJsonFileToPlatform(mobilePlatformToSet);
-    //
-    //            Configuration.browserSize = platform.getBrowserWindowSize();
-    //            System.setProperty(EDGEOPTIONS_ARGS, "--user-agent=\"" + platform.getUserAgent() + "\"");
-    //        }
-    //    }
 
     @Before
     public void beforeScenario(final Scenario scenario) {

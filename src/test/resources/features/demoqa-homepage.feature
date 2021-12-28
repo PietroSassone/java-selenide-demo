@@ -1,4 +1,4 @@
-@HomePage @test @mobile
+@HomePage @mobile
 Feature: DemoQa home page test scenarios
   As a test automation engineer
   I want to test the DemoQa home page
