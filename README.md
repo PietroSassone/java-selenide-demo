@@ -1,4 +1,3 @@
-# java-selenide-demo
 # Demo project to demonstrate test automation framework development for UI testing with Selenide and Java
 
 **Test automation UI framework demo project.**

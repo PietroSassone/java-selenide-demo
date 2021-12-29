@@ -61,9 +61,4 @@ public class WebTrafficRecorder {
             LOGGER.warn("Can't save HTTP archive file. Exception: {}", e.getMessage());
         }
     }
-
-    public void stopSelenideProxy() {
-        selenideProxy.stop();
-        LOGGER.info("Web traffic recorder proxy stopped.");
-    }
 }
