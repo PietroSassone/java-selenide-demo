@@ -30,7 +30,7 @@
     <javax.annotation.version>1.3.2</javax.annotation.version>
     <faker.version>1.0.2</faker.version>
 
-    <rerun.tests.count>0</rerun.tests.count>
+    <rerun.tests.count>1</rerun.tests.count>
   </properties>
 
   <build>
