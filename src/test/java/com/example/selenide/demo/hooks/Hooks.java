@@ -20,7 +20,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 
 public class Hooks {
 
-    private static final Set<String> SUPPORTED_DEVICE_PLATFORMS = Set.of("iPhoneX", "Nexus7");
+    private static final Set<String> SUPPORTED_DEVICE_PLATFORMS = Set.of("iPhoneX", "nexus7");
     private static final String EDGEOPTIONS_ARGS = "edgeoptions.args";
     private static final String DESKTOP_BROWSER_SIZE = "1920x1080";
 
