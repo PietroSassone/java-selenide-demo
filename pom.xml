@@ -16,12 +16,13 @@
 
     <selenide.version>6.1.1</selenide.version>
     <allure.version>2.16.1</allure.version>
+    <allure.maven.version>2.10.0</allure.maven.version>
     <aspectj.version>1.9.7</aspectj.version>
     <cucumber.version>7.1.0</cucumber.version>
     <cucumber.jvm.deps.version>1.0.6</cucumber.jvm.deps.version>
     <spring.version>5.3.10</spring.version>
     <logback.version>1.2.3</logback.version>
-    <junit.version>5.8.2</junit.version>
+    <junit.version>4.13.2</junit.version>
     <failsafe.version>2.22.2</failsafe.version>
     <hamcrest.version>2.2</hamcrest.version>
     <lombok.version>1.18.20</lombok.version>
@@ -104,7 +105,7 @@
       <plugin>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>
-        <version>2.10.0</version>
+        <version>${allure.maven.version}</version>
       </plugin>
     </plugins>
   </build>
@@ -172,8 +173,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
@@ -209,6 +210,5 @@
       <artifactId>javafaker</artifactId>
       <version>${faker.version}</version>
     </dependency>
-
   </dependencies>
 </project>

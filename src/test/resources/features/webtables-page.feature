@@ -59,7 +59,6 @@ Feature: DemoQa Web Tables page test scenarios
       When the delete button for item number 1 is clicked
       Then there should be 2 rows in the table on the current page
 
-    @mobile
     Scenario: Deleting all items from the Web Table on the page
       When the delete button for item number 1 is clicked
         And the delete button for item number 1 is clicked
