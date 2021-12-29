@@ -66,7 +66,7 @@ public class WebTablesStepDefinitions {
     private Faker testDataGenerator;
 
     @After("@WebTablesPage")
-    public void resetWebTablesTestData(final Scenario scenario) {
+    public void afterTest(final Scenario scenario) {
         inputFieldsAndValuesMap.clear();
         webTrafficRecorder.saveHttpArchiveToFile(scenario);
     }

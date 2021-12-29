@@ -30,7 +30,7 @@ public class DemoHomePageStepDefinitions {
     private DemoHomePage homePage;
 
     @After("@HomePage")
-    public void resetWebTablesTestData(final Scenario scenario) {
+    public void afterTest(final Scenario scenario) {
         webTrafficRecorder.saveHttpArchiveToFile(scenario);
     }
 
