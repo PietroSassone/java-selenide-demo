@@ -87,7 +87,7 @@ public class WebTablesStepDefinitions {
     }
 
     @When("^the prepared test data is added to the table (\\d+) times$")
-    public void theAddNewRecordOrSubmitButtonIsClicked(final int numberOfTimesToAddRow) {
+    public void theTestDataIsSubmitted(final int numberOfTimesToAddRow) {
         IntStream.range(0, numberOfTimesToAddRow).forEach(
             occurrenceIndex -> {
                 theAddNewRecordOrSubmitButtonIsClicked(ADD_NEW_RECORD);
