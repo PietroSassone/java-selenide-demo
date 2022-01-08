@@ -72,6 +72,7 @@ Open a terminal and type:
     ```
     mvn clean verify
     ```
+    
 Supported arguments:  
 All configuration options supported by [Selenide](https://selenide.org/javadoc/current/com/codeborne/selenide/Configuration.html).  
 Plus:
