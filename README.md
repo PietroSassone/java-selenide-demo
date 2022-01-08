@@ -56,24 +56,24 @@ The reports create a visualized overview of the test results. Can be viewed in a
 In case of failed scenarios a screenshot of the browser is saved.
 The screenshot is added to the Allure test reporting.
 
-Command to start the Allure reports after a finished test run:
+Command to start the Allure reports after a finished test run:  
     ```
     allure:serve
-    ```
+    ```  
 The report opens in a new browser tab by itself.
 
-**5. Pre-requirements for running the tests**
+**5. Pre-requirements for running the tests**  
 - Have Maven installed.
 - Have Java installed, at lest version 11.
 - Have the latest version of the browser installed that you want to run the tests with.
 
-**6. Launching the tests**
-Open a terminal and type:
+**6. Launching the tests**  
+Open a terminal and type:  
     ```
     mvn clean verify
     ```
-Supported arguments:
-All configuration options supported by [Selenide](https://selenide.org/javadoc/current/com/codeborne/selenide/Configuration.html).
+Supported arguments:  
+All configuration options supported by [Selenide](https://selenide.org/javadoc/current/com/codeborne/selenide/Configuration.html).  
 Plus:
 | argument name                 | supported values             | default value      | description                                                |
 | ----------------------------- | ---------------------------- | ------------------ | ---------------------------------------------------------- |
@@ -83,7 +83,7 @@ Plus:
 The framework supports the browsers supported by Selenide for testing.
 Default: Firefox
 
-*Notes about the mobile device emulation:* 
+*Notes about the mobile device emulation:*  
 - Only on Chrome: tests can be run with the mobile emulation with Selenide's build in mobile emulation. Both in headless and standard mode.
 - For Edge, you can use platformToSet as described in the table above. It was implemented by me. Both in headless and standard mode.
 - Currently, the framework only runs tests in other browsers, like Firefox on Desktop platform.
@@ -94,19 +94,19 @@ Default: Firefox
 - After adding a config for a new device, the tests can be immediately run with this platform.
 - When supplying the '-DplatformToSet' param, the value must be the exact same as the JSON file's name.
 
-Setting which tests should be run based on cucumber tags can be done via the ```-Dcucumber.filter.tags option```.
+Setting which tests should be run based on cucumber tags can be done via the ```-Dcucumber.filter.tags``` option.  
 
-Example command to run the tests with default browser settings (chrome) for only the Web Table page:
+Example command to run the tests with default browser settings (chrome) or only the Web Table page:  
     ```
     mvn clean verify -Dcucumber.filter.tags=@WebTablesPage
     ```
 
-Example command to run the tests with MS Edge Driver in headless mode:
+Example command to run the tests with MS Edge Driver in headless mode:  
     ```
     mvn clean verify -Dselenide.browser=edge -Dselenide.headless=true
     ```
 
-Example command to run the tests with MS Edge Driver while emulating the Nexus 7 tablet browser:
+Example command to run the tests with MS Edge Driver while emulating the Nexus 7 tablet browser:  
     ```
     mvn clean verify -Dselenide.browser=edge -DplatformToSet=nexus7
     ```
