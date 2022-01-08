@@ -32,7 +32,7 @@ Using Selenide.
 - Behaviour Specification
 - Builder
 - Page Object Model
-- Composition of Page Elements, changed for Selenide page obejcts
+- Composition of Page Elements, changed for Selenide page objects
 
 **3. Some aspects of UI testing being demonstrated:**
 - Using Selenium Data tables
