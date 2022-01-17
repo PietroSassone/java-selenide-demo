@@ -11,7 +11,7 @@ For a small demo.
 
 This is project is to demonstrate differences between framework implementation using plain Selenium vs Selenide.
 I have a plain Selenium [project](https://github.com/PietroSassone/selenium-ta-demo) in Java.  
-Plus a Selenide Java [project](https://github.com/PietroSassone/selenium-serenity-demo).  
+Plus a Serenity BDD Java [project](https://github.com/PietroSassone/selenium-serenity-demo).  
 These contain similar features plus the same tests.
 Using different implementation for demo purposes.
 
