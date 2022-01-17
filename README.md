@@ -147,3 +147,9 @@ Example command to run the tests with BrowserStack on Google Pixel 6 & Android 1
     mvn -DbrowserStackEnabled=true -DbrowserStackPlatform=Android -DbrowserStackOSVersion=12.0 "-DbrowserStackDevice=Google Pixel 6"
     ```
  
+ *Note:*    
+ The remote driver setup for BrowserStack does not work if Selenide's local HTTP capture proxy is enabled.  
+ So for running the BrowserStack tests, make sure that  ```-DproxyEnabled``` is set to false.  
+ This is the default value.  
+ 
+ BrowserStack has an own built in support for network log capture anyway.
