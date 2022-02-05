@@ -10,7 +10,7 @@ import io.cucumber.spring.CucumberContextConfiguration;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features="src/test/resources/features",
+    features = "src/test/resources/features",
     glue = "com.example.selenide.demo",
     plugin = "pretty"
 )
