@@ -66,7 +66,7 @@ The report opens in a new browser tab by itself.
 
 **5. Pre-requirements for running the tests**  
 - Have Maven installed.
-- Have Java installed, at lest version 11.
+- Have Java installed, at least version 11.
 - Have the latest version of the browser installed that you want to run the tests with.
 
 **6. Launching the tests**  
